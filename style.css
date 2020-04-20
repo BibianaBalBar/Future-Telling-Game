@@ -1,0 +1,104 @@
+body {
+	font-family: Helvetica, Arial;
+	font-size: 27px;
+	margin: 0 auto;
+	max-width: 960px;
+	padding: 10px 10px;
+	line-height: 1.65em;
+	background: #038c8c;
+	color: #fff;
+	font-weight: 300;
+}
+
+.logo img {
+	margin: 0;
+	display: block;
+	width: 100%;
+}
+
+.future {
+	text-align: center;
+	font-weight: normal;
+}
+
+.description {
+	margin: 80px auto 40px;
+	text-align: center;
+}
+
+.bucket {
+	width: 100%;
+	margin-bottom: 40px;
+	display: inline-block;
+}
+
+.choice-bucket {
+	width: 33.333333%;
+	float: left;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+.choice-bucket input {
+	font-size: 18px;
+	margin: 15px 4%;
+	padding: 16px 0;
+	width: 92%;
+	color: #bb475c;
+	border-radius: 6px;
+	border: 0;
+	outline: 0;
+	text-indent: 20px;
+}
+
+.highlight {
+	font-size: 18px;
+	margin-left: 30px;
+	opacity: .8;
+	line-height: 24px;
+}
+
+#answers {
+	/* opacity: 0; */
+	margin: 60px 0;
+	background: #fff;
+	border-radius: 6px;
+	color: #bb475c;
+	transition: 1s linear;
+	overflow: hidden; /* add this */
+}
+
+#answers p {
+	max-width: 760px;
+	margin: auto;
+	padding: 80px 0;
+}
+
+#answers p span {
+	font-weight: bold;
+}
+
+form input[type=submit] {
+	background: #035aa6;
+	border: 0;
+	color: #fff;
+	font-size: 20px;
+	padding: 1em 2em;
+	cursor: pointer;
+	margin: 0 auto 60px;
+	display: block;
+	text-align: center;
+	border-radius: 6px;
+	font-weight: bold;
+}
+
+.hide {
+	opacity: 0;
+	height: 0;
+}
+
+.show {
+	opacity: 1;
+	height: 100%;
+}
