@@ -35,8 +35,8 @@ body {
 
 .choice-bucket {
 	width: 33.333333%;
-	float: left;
 	display: inline-block;
+	float: left;
 	margin: 0;
 	padding: 0;
 }
@@ -46,7 +46,7 @@ body {
 	margin: 15px 4%;
 	padding: 16px 0;
 	width: 92%;
-	color: #bb475c;
+	color: #035aa6;
 	border-radius: 6px;
 	border: 0;
 	outline: 0;
@@ -55,9 +55,10 @@ body {
 
 .highlight {
 	font-size: 18px;
-	margin-left: 30px;
+
 	opacity: .8;
 	line-height: 24px;
+	text-align: center;
 }
 
 #answers {
@@ -65,7 +66,7 @@ body {
 	margin: 60px 0;
 	background: #fff;
 	border-radius: 6px;
-	color: #bb475c;
+	color: #035aa6;
 	transition: 1s linear;
 	overflow: hidden; /* add this */
 }
