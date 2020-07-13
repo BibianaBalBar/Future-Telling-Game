@@ -17,14 +17,14 @@ function get_answer(category) {
 	for (let i = 0; i < inputs.length; i++) {
 		answer = inputs[i].value;
 		if (answer !== '') {
-			choices.push(answer); //...add it to the end of the list
+			choices.push(answer); 
 		}
 	}
-	return choices[random_number(choices.length)]; // Pick and return a random choice choice.length = number of answers the user provided in that category
+	return choices[random_number(choices.length)]; 
 }
 
 function fill_in_answers(answers) {
-	let home = document.querySelector('#home'); // This says make a new variable and find the HTML tag that has the ID of "home"
+	let home = document.querySelector('#home'); 
 	let profession = document.querySelector('#profession');
 	let partner = document.querySelector('#partner');
 	let location = document.querySelector('#location');
@@ -60,4 +60,4 @@ function handle_submission(evt) {
 
 // Find the form on the page and attach a handler for when it's submitted
 let form = document.querySelector('#mash');
-form.addEventListener('submit', handle_submission); // Anytime the form is submitted, we want to call the function handle_submission
+form.addEventListener('submit', handle_submission); 

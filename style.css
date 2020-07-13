@@ -13,23 +13,28 @@ body {
 	line-height: 1.65em;
 	background: #111111;
 	color: #fff;
-	font-weight: 300;
+	font-weight: 300;	
 }
 
 .intro {
-	background-image: url('https://source.unsplash.com/xU5Mqq0Chck');
+	background-image: url('img/cristal-ball.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	border-radius: 6px;
 	height: 20rem;
 	top: 0;
 	left: 0;
+	-webkit-box-shadow: 5px 5px 15px 0px rgb(126, 126, 126);
+	-moz-box-shadow: 5px 5px 15px 0px rgb(126, 126, 126);
+	box-shadow: 5px 5px 15px 0px rgb(126, 126, 126);
+	animation: opening 1.8s ease-in-out, rotate-intro 1.5s linear infinite alternate;
 }
 
 .intro h1 {
 	color: white;
 	padding: 4rem;
-	text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+	text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);
+	font-size: 5.3rem;
 }
 
 .future {
@@ -40,7 +45,8 @@ body {
 .description {
 	margin: 30px auto 30px;
 	text-align: center;
-	text-shadow: 2px 2px 2px rgba(150, 150, 150, .8);
+	
+	padding-top: 1rem;
 }
 
 .bucket {
@@ -65,6 +71,10 @@ body {
 	border: 0;
 	outline: 0;
 	text-indent: 20px;
+	-webkit-box-shadow: 3px 3px 14px 0px rgba(204,204,204,1);
+	-moz-box-shadow: 3px 3px 14px 0px rgba(204,204,204,1);
+	box-shadow: 3px 3px 14px 0px rgba(204,204,204,1);
+	animation: rotate 1.5s linear infinite alternate;
 }
 
 .highlight {
@@ -86,6 +96,7 @@ body {
 	max-width: 760px;
 	margin: auto;
 	padding: 80px 0;
+	text-shadow: 4px 4px 4px rgba(150, 150, 150, 1);
 }
 
 form input[type=submit] {
@@ -100,6 +111,9 @@ form input[type=submit] {
 	text-align: center;
 	border-radius: 6px;
 	font-weight: bold;
+	-webkit-box-shadow: 3px 3px 15px 0px rgb(126, 126, 126);
+	-moz-box-shadow: 3px 3px 15px 0px rgb(126, 126, 126);
+	box-shadow: 3px 3px 15px 0px rgb(126, 126, 126);
 }
 
 .hide {
@@ -110,4 +124,37 @@ form input[type=submit] {
 .show {
 	opacity: 1;
 	height: 100%;
+	animation: opening 1.8s ease-in-out, rotate-intro 1.5s linear infinite alternate;
+	-webkit-box-shadow: 5px 5px 20px 0px rgba(204,204,204,1);
+	-moz-box-shadow: 5px 5px 20px 0px rgba(204,204,204,1);
+	box-shadow: 5px 5px 20px 0px rgba(204,204,204,1);
+}
+
+
+@keyframes opening {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(-1deg);
+    }
+    to {
+        transform: rotateZ(1deg);
+    }
+}
+
+@keyframes rotate-intro {
+    from {
+        transform: rotateZ(-0.4deg);
+    }
+    to {
+        transform: rotateZ(0.4deg);
+    }
 }
